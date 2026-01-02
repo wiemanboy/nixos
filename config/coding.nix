@@ -27,13 +27,13 @@
   };
   
   environment.systemPackages = with pkgs; [
-  vscode
-  git
-  yq-go
-  jq
-  kubectl
-  kubernetes-helm
-  talosctl
-  docker
+    vscode
+    git
+    yq-go
+    jq
+    kubectl
+    kubernetes-helm
+    talosctl
+    docker
   ];
 }
