@@ -11,6 +11,7 @@
     kubernetes-helm
     talosctl
     docker
+    opentofu
   ];
 
   programs.git = {

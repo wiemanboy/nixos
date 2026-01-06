@@ -13,6 +13,7 @@
     spotify
     gimp
     btop
+    usbimager
   ];
 
   services.xserver.enable = true;
