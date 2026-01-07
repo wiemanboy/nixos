@@ -9,7 +9,7 @@
     enable = true;
 
     settings = {
-      format = ''[](#7A348E)$os$username[](bg:#FA027D fg:#7A348E)$directory[](fg:#FA027D bg:#FC8160)$git_branch$git_status[](fg:#FC8160 bg:#06669A)$docker_context$kubernetes[](fg:#06669A bg:#A696E6)$time[ ](fg:#A696E6)'';
+      format = ''[](#7A348E)$os$username$nix_shell[](bg:#FA027D fg:#7A348E)$directory[](fg:#FA027D bg:#FC8160)$git_branch$git_status[](fg:#FC8160 bg:#06669A)$docker_context$kubernetes[](fg:#06669A bg:#A696E6)$time[ ](fg:#A696E6)'';
 
       username = {
         show_always = false;
@@ -22,6 +22,12 @@
       os = {
         style = "bg:#7A348E";
         disabled = true;
+      };
+
+      nix_shell = {
+        style = "bg:#7A348E";
+        format = "[$symbol$name ]($style)";
+        disabled = false;
       };
 
       directory = {
