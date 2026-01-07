@@ -10,9 +10,18 @@
     kubectx
     kubernetes-helm
     talosctl
-    docker
     opentofu
   ];
+
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+
+  users.users.wiebol = {
+    isNormalUser = true;
+    extraGroups = [ "docker" ];
+  };
 
   programs.git = {
     enable = true;
