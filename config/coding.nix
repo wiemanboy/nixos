@@ -42,7 +42,7 @@
         pl = "pull";
         plr = "pull --rebase";
         ps = "push";
-        yeet = "'!git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)'";
+        yeet = "!git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)";
         pop = "stash pop";
       }; 
     };
