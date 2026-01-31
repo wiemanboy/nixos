@@ -9,5 +9,7 @@ in
     unzip
     imk
     wget
+    tree
+    busybox
   ];
 }
