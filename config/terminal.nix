@@ -48,7 +48,7 @@
         disabled = false;
         symbol = "⚓ ";
         style = "bg:#06669A";
-        format = "[ $symbol $context ($namespace) ]($style)";
+        format = "[ $symbol $context \\($namespace\\) ]($style)";
       };
 
       git_branch = {
@@ -77,7 +77,7 @@
       export netshoot="nicolaka/netshoot"
       alias k="kubectl"
       alias kns="kubens"
-      alias kc="kubectx"
+      alias kctx="kubectx"
     '';
   };
 }
