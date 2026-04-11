@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     vscode
     firefox
+    chromium
     thunderbird
     keepassxc
     onedrive
@@ -18,6 +19,8 @@
     gnomeExtensions.bluetooth-battery-meter
     gnomeExtensions.system-monitor
   ];
+
+  services.flatpak.enable = true; 
 
   services.xserver.enable = true;
   services.displayManager.gdm.enable = true;
