@@ -6,7 +6,7 @@ let
 
   src = pkgs.fetchurl {
     url = "https://curseforge.overwolf.com/downloads/curseforge-${version}-linux.AppImage";
-    hash = "sha256-RXW5eFCqHzuM4I+gGjUyyLoQTrp9l6aShIfx/fLiGEU=";
+    hash = "sha256-9qGsqRRGpzw0Xfygt0lzafWdd9hwuKhR1hW/yn8JXNY=";
   };
 
   desktopEntry = pkgs.makeDesktopItem {
