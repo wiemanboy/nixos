@@ -15,6 +15,7 @@
     gimp
     btop
     usbimager
+    whatsapp-electron
     gnomeExtensions.desktop-clock
     gnomeExtensions.bluetooth-battery-meter
     gnomeExtensions.system-monitor
