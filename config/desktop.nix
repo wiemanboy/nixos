@@ -19,6 +19,7 @@
     gnomeExtensions.desktop-clock
     gnomeExtensions.bluetooth-battery-meter
     gnomeExtensions.system-monitor
+    gnomeExtensions.clipboard-history
   ];
 
   services.flatpak.enable = true; 
