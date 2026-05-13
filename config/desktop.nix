@@ -8,6 +8,7 @@
     thunderbird
     keepassxc
     onedrive
+    nextcloud-client
     openrgb
     discord
     betterdiscordctl
