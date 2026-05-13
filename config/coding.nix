@@ -11,6 +11,7 @@
     kubernetes-helm
     talosctl
     opentofu
+    go
   ];
 
   virtualisation.docker.rootless = {
