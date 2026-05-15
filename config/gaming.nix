@@ -8,8 +8,6 @@ in
   environment.systemPackages = with pkgs; [
     steam
     heroic
-    lutris
-    curseforge
     prismlauncher
     gpu-screen-recorder-gtk
     antimicrox
