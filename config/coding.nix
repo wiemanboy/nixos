@@ -12,6 +12,8 @@
     talosctl
     opentofu
     go
+    gopls
+    gcc
   ];
 
   virtualisation.docker.rootless = {
