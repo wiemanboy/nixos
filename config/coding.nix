@@ -8,6 +8,7 @@
     jq
     kubectl
     kubectx
+    kubelogin-oidc
     kubernetes-helm
     talosctl
     opentofu
