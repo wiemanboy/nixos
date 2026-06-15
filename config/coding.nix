@@ -30,7 +30,6 @@
   programs.git = {
     enable = true;
     config = {
-      push = { autoSetupRemote = true; };
       user = {
         name  = "wiemanboy";
         email = "wiemanboy@gmail.com";
@@ -49,6 +48,24 @@
         yeet = "!git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)";
         pop = "stash pop";
       }; 
+      push = { autoSetupRemote = true; };
+      fetch = { 
+        prune = true; 
+        pruneTags = true;
+        all = true;
+      };
+      diff = {
+        algorithm = "histogram";
+      };
+      branch = {
+        sort = "committerdate";
+      };
+      tag = {
+        sort = "version:refname";
+      };
+      column = {
+        ui = "auto";
+      };
     };
   };
 }
