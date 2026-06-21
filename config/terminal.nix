@@ -70,14 +70,4 @@
       };
     };
   };
-
-  programs.bash = {
-    interactiveShellInit = ''
-      export kubeconfig="$HOME/.kube/config"
-      export netshoot="nicolaka/netshoot"
-      alias k="kubectl"
-      alias kns="kubens"
-      alias kctx="kubectx"
-    '';
-  };
 }

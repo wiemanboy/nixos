@@ -68,4 +68,22 @@
       };
     };
   };
+
+  programs.bash = {
+    completion.enable = true;
+    interactiveShellInit = ''
+      export kubeconfig="$HOME/.kube/config"
+
+      source <(kubectl completion bash)
+      alias k="kubectl"
+      complete -o default -F __start_kubectl k
+
+      # Completion is still kind of broken
+      alias kctx="kubectx"
+      complete -o default -F __start_kubectx kctx
+
+      alias kns="kubens"
+      complete -o default -F __start_kubens kns
+    '';
+  };
 }
