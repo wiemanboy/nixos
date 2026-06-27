@@ -17,6 +17,7 @@
     btop
     usbimager
     whatsapp-electron
+    wl-clipboard
     gnomeExtensions.desktop-clock
     gnomeExtensions.bluetooth-battery-meter
     gnomeExtensions.system-monitor
