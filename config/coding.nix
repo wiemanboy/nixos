@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 
+let 
+  mount-on-pod = import ../packages/mount-on-pod.nix { inherit pkgs; };
+in
+
 {
   environment.systemPackages = with pkgs; [
     git
@@ -10,6 +14,7 @@
     kubectx
     kubelogin-oidc
     kubernetes-helm
+    mount-on-pod
     talosctl
     opentofu
     go
