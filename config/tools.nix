@@ -7,7 +7,6 @@ in
 {
   environment.systemPackages = with pkgs; [
     unzip
-    imk
     wget
     tree
     busybox
