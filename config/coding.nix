@@ -20,6 +20,8 @@ in
     go
     gopls
     gcc
+    neovim
+    vimPlugins.nvchad-ui
   ];
 
   virtualisation.docker.rootless = {
