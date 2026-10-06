@@ -8,18 +8,24 @@ in
   environment.systemPackages = with pkgs; [
     git
     gh
+
     yq-go
     jq
+
     kubectl
     kubectx
     kubelogin-oidc
     kubernetes-helm
     mount-on-pod
     talosctl
+    
     opentofu
     go
     gopls
     gcc
+    kcl
+    kcl-language-server
+
     neovim
     vimPlugins.nvchad-ui
   ];
