@@ -30,6 +30,7 @@ in
     vimPlugins.nvchad-ui
   ];
 
+  virtualisation.docker.enable = true;
   virtualisation.docker.rootless = {
     enable = true;
     setSocketVariable = true;
