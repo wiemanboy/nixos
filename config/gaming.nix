@@ -5,6 +5,7 @@
     steam
     heroic
     prismlauncher
+    gdlauncher-carbon
     gpu-screen-recorder-gtk
     antimicrox
   ];
