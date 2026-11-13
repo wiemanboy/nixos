@@ -8,6 +8,7 @@ in
   environment.systemPackages = with pkgs; [
     git
     gh
+    git-credential-oauth
 
     yq-go
     jq
@@ -30,7 +31,6 @@ in
     vimPlugins.nvchad-ui
   ];
 
-  virtualisation.docker.enable = true;
   virtualisation.docker.rootless = {
     enable = true;
     setSocketVariable = true;
@@ -79,6 +79,15 @@ in
       };
       column = {
         ui = "auto";
+      };
+      credential.helper = [
+        "cache --timeout 7200"
+        "oauth"
+      ];
+      "credential \"https://forgejo.wieman.cloud\"" = {
+        oauthClientId = "a4792ccc-144e-407e-86c9-5e7d8d9c3269";
+        oauthAuthURL = "/login/oauth/authorize";
+        oauthTokenURL = "/login/oauth/access_token";
       };
     };
   };
